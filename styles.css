@@ -390,7 +390,8 @@ li {
     flex-direction: row;
     column-gap: 20px;
     row-gap: 20px;
-    padding: 0 10%;
+    padding: 0 5%;
+    padding-left: 110px;
     padding-bottom: 30px;
     align-items: center;
 }
@@ -764,12 +765,6 @@ li {
     .pricing .pricing-package .package-list{    
         font-size: 14px;
     }
-
-    .service-container .service_row{
-        align-items: center;
-        justify-content: center;
-        padding-left: 100px;
-    }
 }
 
 @media (max-width: 1024px){
@@ -801,12 +796,10 @@ li {
         background-position-y: center;
     }
     .pricing .container{
-        padding: 0 150px 0 150px;
-        grid-template-columns: repeat(1,1fr);
-        
+        grid-template-columns: repeat(3,1fr);
     }
     .pricing .container .btn-applynow{
-        padding-left: 110px;
+        padding-left: 50px;
     }
     .contact-container{
         display: flex;
@@ -816,7 +809,8 @@ li {
     .service-container .service_row .service_rows .row{
         row-gap: 5px;
         column-gap: 5px;
-        padding: 0 60px 30px 60px;
+        padding: 0 18%;
+        padding-bottom: 30px;
     }
     .contact-container{
         display: grid;
@@ -902,7 +896,7 @@ li {
 @media (max-width: 480px){
     .home{
         padding-left: 20px;
-        background-position-x: 1320vw;
+        background-position-x: 12vw;
         background-position-y: center;
     }
     .home-content h1{
@@ -963,13 +957,16 @@ li {
 }
 @media (max-width: 370px){
     .home{
-        padding-top: 60px;
-        height: 120vh;
+        height: 130vh;
         background-position: 80%;
         background-size: cover;
     }
     .home-content h1{
+        padding-top: 20px;
         font-size: 30px;
+    }
+    .home-content p{
+        font-size: 13px;
     }
     .home-content .btn-box a{
       font-size: 14px;
@@ -1040,6 +1037,9 @@ li {
         display: flex;
         padding-left: 30px;
     }
+    .contact-container h5{
+        font-size: 25px;
+    }
     .contact-right{
         display: none;
     }
@@ -1049,5 +1049,8 @@ li {
     }
     #footer1 .social-links a{
         font-size: 11.5px;
+    }
+    .footer1 .footer-container-secondary span{
+        font-size: 10px;
     }
 }
